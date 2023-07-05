@@ -1,0 +1,47 @@
+
+                                          Ecart ECartFrontend
+                                      ..................................
+
+                              1. create a folder E-create
+                              2. In side it Create  a Angular Application - ng new e-cart-ECartFrontend
+                              3. cd e-cart-frontend 
+                              4. code .
+                              5. Run angular applications
+                              6. clear cose in app.component.html
+                              7. import 3rd party libraries
+                                        ->bootstrap(index.html)
+                                        ->font-awesome(index.html)
+                                        ->googlefonts(style.css)
+                              8. lazy loading  
+                                    By default, NgModules are eagerly loaded. This means that as soon as the application loads,
+                                    so do all the NgModules, whether they are immediately necessary or not. For large applications with lots of routes
+                                    consider lazy loading —a design pattern that loads NgModules as needed
+                                    Lazy loading helps keep initial bundle sizes smaller, which in turn helps decrease load times.
+                                We have one module in application -app.module
+                                Here we create another module- ng g m products --route products --module app.module                        
+                              9. component genaration   
+                                     ->ng g c products/allproducts
+                                     ->ng g c products/viewproduct
+                                     ->ng g c products/wishlist
+                                     ->ng g c products/cart
+                                   not in lazzy loading
+                                      ->ng g c header
+                                      ->ng g c footer
+                                      ->ng g c pageNotFound  
+                              10. setup path
+                                    ->put <router-outlet></router-outlet>
+                                    -> products.routing.module.ts 
+
+
+                               -> Wishlist functionality is completed
+
+                                   ->Product search
+                                       ng g p products/pipes/filter 
+                       ->behavior subject
+                        If the data is confined to a single component there is (almost) no need for observables.
+                         If the data needs to be shared among multiple components however, it is stored in singleton services.
+                          And components have no way of knowing the state of data in the service.
+                         So observables are used to tell the components the state of the data has been changed. 
+
+                        ->cart functionality
+                                          
